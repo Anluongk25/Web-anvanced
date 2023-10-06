@@ -1,0 +1,179 @@
+/* STYLE NAV */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+  background-color: #8b0000;
+  left: 0;
+  top: 0;
+}
+.menu-list-content a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.menu-list-content {
+  padding: 12px 30px;
+  font-size: 25px;
+}
+#home-image {
+  width: 100vw;
+}
+.menu-list-content:hover {
+  background-color: #ff0000;
+}
+.menu-list-content:hover a {
+  color: #ffff00;
+}
+#font-icons{
+  display: none;
+
+}
+/* STYLE home-image */
+#home-image {
+  width: 100%;
+}
+/* STYLE HOME AND HISTORY */
+#calendar{
+  width: 150px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* STYLE MENU */
+html {
+  scroll-behavior: smooth;
+}
+.menu-title {
+  font-size: 50px;
+  font-family: "Amatic SC";
+  text-align: center;
+  font-weight: bolder;
+}
+.menu {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+ 
+  padding: 20px;
+}
+.content {
+  font-size: 18px;
+  font-family: "Lora", serif;
+}
+.title-information{
+  font-size: 22px;
+  text-align: left;
+}
+/* STYLE ACTIVITIES */
+.activity-name {
+  padding: 20px;
+  width: 100%;
+}
+.activitie-image {
+  width: 20%;
+}
+.activities-photo {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* STYLE CONTACT US */
+#submit{
+  margin-left: auto;
+  margin: 5px;
+  width: 80px;
+}
+#contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-information {
+  margin: 3px;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact{
+  background-color: #8b0000;
+  
+}
+#contact-us{
+color: #fff;
+}
+/* STYLE COSTUMES */
+.costumes-album {
+  display: flex;
+  flex-wrap: wrap;
+}
+.costumes-image {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+}
+.photo-name {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Lora", serif;
+}
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  /* For mobile-phone */
+  .activitie-image{
+    width: 100%;
+    margin-bottom: 12px;
+  }
+.activities-photo{
+  flex-wrap: wrap;
+}
+.title-information{
+  font-size: 24px;
+}
+.content{
+  font-size: 16px;
+}
+.normal{
+  display: none;
+}
+#font-icons{
+  display: block;
+}
+.nav{
+  justify-content: left;
+}
+.content{
+  font-size: 12px;
+}
+}
+
+@media (max-width: 769px) and (min-width : 576px) {
+  /* For tablet */
+  .costumes-image {
+    width: 320px;
+    height: 200px;
+    object-fit: contain;
+  }
+  .activitie-image{
+    width: 45%;
+    margin-bottom: 12px;
+  }
+  .costumes-album {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .activities-photo{
+    flex-wrap: wrap;
+  }
+  .menu-list-content a{
+    font-size: 18px;
+  }
+}
